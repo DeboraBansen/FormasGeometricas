@@ -24,7 +24,7 @@ public class Main {
 		int op=-1;
 		
 		while(op!=0) {
-			System.out.println("\nESCOLHA UMA OPÇAO A SEGUIR:");
+			System.out.println("\nESCOLHA UMA OPÃ‡AO A SEGUIR:");
 			System.out.println("0- SAIR");
 			System.out.println("1- ADICIONAR FORMA GEOMETRICA");
 			System.out.println("2- MOSTRAR PERIMETRO");
@@ -56,7 +56,7 @@ public class Main {
 	public static void adicionarFormaGeometrica() {
 		int op=-1;
 		
-		System.out.println("\nESCOLHA UMA OPÇAO A SEGUIR:");
+		System.out.println("\nESCOLHA UMA OPÃ‡AO A SEGUIR:");
 		System.out.println("0- SAIR");
 		System.out.println("1- CIRCULO");
 		System.out.println("2- RETANGULO");
@@ -107,13 +107,15 @@ public class Main {
 	
 	public static void mostrarPerimetro() {
 		DecimalFormat format=new DecimalFormat("0.00");
-		System.out.println("\nPERIMETRO: "+format.format(formasgeometricas.get(formasgeometricas.size()-1).calcularPerimetro()));
+		System.out.println("\nPERIMETRO: "+format.format(formasgeometricas.get(formasgeometricas.size()-1).
+								 calcularPerimetro()));
 		
 	}
 	
 	public static void mostrarArea() {
 		DecimalFormat format=new DecimalFormat("0.00");
-		System.out.println("\nAREA: "+format.format(formasgeometricas.get(formasgeometricas.size()-1).calcularArea()));
+		System.out.println("\nAREA: "+format.format(formasgeometricas.get
+							    (formasgeometricas.size()-1).calcularArea()));
 	}
 	
 	public static FormaGeometrica criarForma(int tipo) {
